@@ -1,153 +1,153 @@
 /* загальні стилі*/
 :root {
-  --main-color: #212121;
-  --secondary-color: #757575;
-  --accent-color: #2196f3;
-  --white-color: #fff;
-  --black-color: #000;
+	--main-color: #212121;
+	--secondary-color: #757575;
+	--accent-color: #2196f3;
+	--white-color: #fff;
+	--black-color: #000;
 }
 
 .body {
-  font-family: roboto, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--main-color);
+	font-family: roboto, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--main-color);
 }
 
 li {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 address {
-  font-style: normal;
+	font-style: normal;
 }
 
 /* лише для реалізації стилів у футері та герої, бо буде з білим фоном зливатися */
 .background-second {
-  display: block;
-  background-color: #2f303a;
+	display: block;
+	background-color: #2f303a;
 }
 
 /* логотип */
 .logo {
-  font-family: raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19x;
-  letter-spacing: 0.03em;
-  color: var(--black-color);
-  text-decoration: none;
+	font-family: raleway;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19x;
+	letter-spacing: 0.03em;
+	color: var(--black-color);
+	text-decoration: none;
 }
 
 .logo-el {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 .inner-color {
-  color: var(--white-color);
+	color: var(--white-color);
 }
 
 .link {
-  color: var(--main-color);
-  text-decoration: none;
+	color: var(--main-color);
+	text-decoration: none;
 }
 
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 .link.current {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 /* кнопка */
 .button {
-  font-family: roboto;
-  color: var(--main-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  cursor: pointer;
+	font-family: roboto;
+	color: var(--main-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	cursor: pointer;
 }
 
 .button.current,
 .button:hover,
 .button:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+	color: var(--white-color);
+	background-color: var(--accent-color);
 }
 
 /* шапка сайту */
 .header {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 
 .header-text {
-  color: var(--secondary-color);
+	color: var(--secondary-color);
 }
 
 /* унікальний контент */
 .hero {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-color);
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--white-color);
 }
 
 .main-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--main-color);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	color: var(--main-color);
 }
 
 .main-sub-title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
 }
 
 .large-main-title {
-  font-size: 36px;
-  line-height: 1.67;
-  text-align: center;
+	font-size: 36px;
+	line-height: 1.67;
+	text-align: center;
 }
 
 .main-text {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--secondary-color);
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.03em;
+	color: var(--secondary-color);
 }
 
 .main-text-lower {
-  line-height: 1.71;
-  color: var(--secondary-color);
+	line-height: 1.71;
+	color: var(--secondary-color);
 }
 
 .name-list {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
 }
 
 /* підвал */
 .footer-text {
-  color: var(--white-color);
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+	color: var(--white-color);
+	line-height: 1.71;
+	letter-spacing: 0.03em;
 }
 
 .footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.6);
 }
