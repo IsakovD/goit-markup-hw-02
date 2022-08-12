@@ -5,13 +5,20 @@
 	--accent-color: #2196f3;
 	--white-color: #fff;
 	--black-color: #000;
+	--team-bg-and-button-color: #f5f4fa;
+	--footer-bg-color: #2f303a;
+	--box-line-color: #eeeeee;
+	--horizontal-line-color: #ececec;
+	--alfa-white-color: #ffffff99;
 }
 
 .body {
 	font-family: roboto, sans-serif;
-	font-weight: 400;
 	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
 	color: var(--main-color);
+	background-color: var(--white-color);
 }
 
 li {
@@ -27,9 +34,13 @@ address {
 }
 
 /* лише для реалізації стилів у футері та герої, бо буде з білим фоном зливатися */
-.background-second {
-	display: block;
-	background-color: #2f303a;
+.background-footer,
+.background-hero {
+	background-color: var(--footer-bg-color);
+}
+
+.background-team-list {
+	background-color: var(--team-bg-and-button-color);
 }
 
 /* логотип */
@@ -38,7 +49,6 @@ address {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19x;
-	letter-spacing: 0.03em;
 	color: var(--black-color);
 	text-decoration: none;
 }
@@ -64,14 +74,50 @@ address {
 	color: var(--accent-color);
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 /* кнопка */
 .button {
 	font-family: roboto;
 	color: var(--main-color);
+	background-color: var(team-bg-and-button-color);
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
+	letter-spacing: 0.03em;
+	display: flex;
+	align-items: center;
+	text-align: center;
 	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+}
+
+.hero-button {
+	color: var(--white-color);
+	background-color: var(--accent-color);
+	font-weight: 700;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-position {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
 
 .button.current,
@@ -103,7 +149,7 @@ address {
 	color: var(--white-color);
 }
 
-.main-title {
+.section-title {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
@@ -111,27 +157,26 @@ address {
 	color: var(--main-color);
 }
 
-.main-sub-title {
+.section-sub-title {
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
 }
 
-.large-main-title {
+.large-section-title {
 	font-size: 36px;
 	line-height: 1.67;
 	text-align: center;
 }
 
-.main-text {
+.section-text {
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.03em;
 	color: var(--secondary-color);
 }
 
-.main-text-lower {
-	line-height: 1.71;
+.section-text-lower {
 	color: var(--secondary-color);
 }
 
@@ -144,10 +189,8 @@ address {
 /* підвал */
 .footer-text {
 	color: var(--white-color);
-	line-height: 1.71;
-	letter-spacing: 0.03em;
 }
 
 .footer-contacts {
-	color: rgba(255, 255, 255, 0.6);
+	color: var(--alfa-white-color);
 }
