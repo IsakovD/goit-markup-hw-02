@@ -15,7 +15,6 @@
 .body {
 	font-family: roboto, sans-serif;
 	font-size: 14px;
-	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--main-color);
 	background-color: var(--white-color);
@@ -114,12 +113,6 @@ address {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.button-position {
-	position: relative;
-	left: 50%;
-	transform: translate(-50%, 0);
-}
-
 .button.current,
 .button:hover,
 .button:focus {
@@ -177,6 +170,7 @@ address {
 }
 
 .section-text-lower {
+	line-height: 1.71;
 	color: var(--secondary-color);
 }
 
@@ -188,6 +182,7 @@ address {
 
 /* підвал */
 .footer-text {
+	line-height: 1.71;
 	color: var(--white-color);
 }
 
